@@ -22,6 +22,7 @@ public class AgenciaDeViajesTest {
 
     @org.testng.annotations.Test
     public void testCatalogoDePaquetes() {
-        agenciaDeViajes.catalogoDePaquetes();
+
+        agenciaDeViajes.catalogo();
     }
 }

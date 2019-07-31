@@ -1,6 +1,6 @@
 package ar.edu.unahur.obj2.ejercicio1;
 
-public class PaqueteNOA {
+public  class PaqueteNOA extends Paquete{
 
     public void itinerario() {
         print("Nombre: " + nombre());
@@ -11,9 +11,6 @@ public class PaqueteNOA {
         print("Transporte Vuelta: " + transporteVuelta());
     }
 
-    private String nombre() {
-        return "Paquete NOA";
-    }
 
 
     protected String transporteIda() {
@@ -39,4 +36,29 @@ public class PaqueteNOA {
     private void print(String texto) {
         System.out.println(texto);
     }
+
+    @Override
+    void imprimirItinerario() {
+
+    }
+
+    String nombre() {
+        return "Paquete NOA";
+    }
+
+    @Override
+    String getDia1() {
+        return null;
+    }
+
+    @Override
+    String getDia2() {
+        return null;
+    }
+
+    @Override
+    void getDia3() {
+
+    }
+
 }

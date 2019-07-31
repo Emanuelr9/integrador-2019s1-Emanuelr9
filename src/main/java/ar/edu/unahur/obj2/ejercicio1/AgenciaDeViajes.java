@@ -6,17 +6,30 @@ public class AgenciaDeViajes {
     private PaqueteNOA paqueteNOA;
     private PaquetePatagonia paquetePatagonia;
 
+    private Itinerario itinerario;
+
+
+
     public AgenciaDeViajes(PaqueteCuyo paqueteCuyo, PaqueteNOA paqueteNOA, PaquetePatagonia paquetePatagonia) {
         this.paqueteCuyo = paqueteCuyo;
         this.paqueteNOA = paqueteNOA;
         this.paquetePatagonia = paquetePatagonia;
+
     }
 
-    public void catalogoDePaquetes() {
+
+    /* public void catalogoDePaquetes() {
         paqueteCuyo.imprimirItinerario();
         paqueteNOA.itinerario();
         paquetePatagonia.getItinerario();
-    }
+    }*/
+
+      void catalogo(){
+
+          this.itinerario.actualizar();
+
+
+      }
 
 
 }
